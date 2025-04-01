@@ -8,59 +8,88 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
     <h1>LAB 7: JavaScript Events</h1>
+    </header>
 <!--  mosue event (hovering and leaving the button should change a message) -->
     <section>
         <h2>Mouse Event</h2>
-
-            <button id="mouse-event">Mouse Event</button>
-
+        
+        <button id="mouse-event">Listener Method</button>
+        <button onclick="alert('Mouse Inline Engaged')">Inline Method</button>
+        <br>
+        <button type="button" class="hoverMe"></button>
     </section>
-
+    
 <!--  keyboard event (display the latest key pressed) -->
     <section>
+    
         <h2>Keyboard Event</h2>
-        <label for="keyEvent">Keyboard Event:</label>
-            <input type="text" id="keyboard-event">
+        
+        <input type="text" id="keyboard-event" placeholder="Check The Console.log">
+    
     </section>
-
+    
 <!--  form events (display a message when the form is submitted without refreshing the page) -->
     <section>
+        
         <h2>Form Events</h2>
-        <label for="fName">fName:</label>
-        <input type="text" id="fName">
-        <br>
-        <br>
-        <label for="mName">mName:</label>
-        <input type="text" id="mName">
-        <br>
-        <br>
-        <label for="lName">lName:</label>
-        <input type="text" id="lName">
-        <br>
-        <br>
-            <button id="form-event">Form Event</button>
-
+        
+        <form id="theForm">
+            
+            <label for="fname">First Name:</label>
+            <input id="fName" name="fName">
+            <br>
+            <br>
+            <label for="lname">Last Name:</label>
+            <input id="lName" name="lName">
+            <br>
+            <br>
+            <label for="numberSelect">Pick a number</label>
+            <select id="number" name="number">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
     </section>
-
+    
 <!--  focus events & blur events (update a message when the input gains or loses focus) -->
     <section>
+    
         <h2>Focus and Blur</h2>
-        <label for="fNB">Focus and blur:</label>
-        <input type="text" id="fNB">
-
+        
+        <label for="focus">Focus:</label>
+        <input type="text" id="focus">
+        <br>
+        <br>
+        <label for="blur">Blur:</label>
+        <input type="text" id="blur">
+    
     </section>
-
+    
 <!--  event delegation (clicking any button inside the container displays its label or content) -->
     <section>
+
         <h2>Event Delegation</h2>
-
-            <button id="delegation">Delegation</button>
-
+        
+        <ul id="clickList">
+            <li>Click</li>
+            <li>Click</li>
+            <li>Click</li>
+            <li>Click</li>
+            <li>Click</li>
+            <li>Click</li>
+        </ul>
+    
     </section>
-
-    <footer>
-        &copy;2025 
-    </footer>
+    
+    <footer>&copy;2025</footer>
 </body>
 </html>

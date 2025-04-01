@@ -1,16 +1,22 @@
 body {
+    display: flex;
+    flex-direction: column;
     background-color: azure;
+    justify-content: center;
+    align-items: center;
     margin: 0;
+    min-height: 100vh;
 }
-h1 {
+header {
+    background-color: rgb(50, 56, 63);
     font-weight: bolder;
-    background-color: #333;
     color: antiquewhite;
     text-align: center;
     text-decoration: underline;
     margin: 0;
     padding-top: 5px;
     padding-bottom: 10px;
+    width: 100%;
 }
 
 h2 {
@@ -18,12 +24,15 @@ h2 {
 }
 
 section {
-    background-color: yellow;
+    color: antiquewhite;
+    background-color: rgb(50, 56, 63);
     text-align: center;
-    width: 25%;
-    justify-self: center;
+    width: 40%;
+    justify-content: center;
     padding: 10px;
     margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 title {
@@ -35,14 +44,49 @@ label {
 }
 
 button {
-    background-color: aquamarine;
+    background-color: lightskyblue;
     padding: 10px;
+    margin: 10px;
 }
 
 footer {
     background-color: orange;
-    margin: 0%;
-    padding-bottom: 5px;
+    margin-top: auto;
+    width: 100%;
     padding-top: 10px;
     text-align: center;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    padding-right: 40px;
+}
+
+.hoverMe {
+    background-color: lightskyblue;
+    border: none;
+    color: black;
+    cursor: pointer;
+    width: 115px;
+}
+
+.hoverMe:hover {
+    transition: 500ms;
+    background-color: rgb(255, 84, 84);
+}
+
+.hoverMe:active {
+    transform: translateY(4px);
+}
+
+.hoverMe:after {
+    content:"Hover Over Me";
+}
+
+.hoverMe:hover::after {
+    content: "Hovered";
+    width: 80px;
 }
