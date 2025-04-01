@@ -30,7 +30,6 @@ section {
     width: 40%;
     justify-content: center;
     padding: 10px;
-    margin: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -45,10 +44,14 @@ label {
 
 button {
     background-color: lightskyblue;
+    width: 30%;
     padding: 10px;
     margin: 10px;
 }
 
+#container {
+    padding: 10%;
+}
 footer {
     background-color: orange;
     margin-top: auto;

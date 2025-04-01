@@ -60,3 +60,12 @@ function focusFun() {
 }
 
 focusFun();
+
+//Event delegation
+const list = document.getElementById('container');
+
+list.addEventListener('click', function(event) {
+    if (event.target.tagName === 'BUTTON') {
+        alert('Thank you for clicking: ' + event.target.textContent);
+    }
+});
