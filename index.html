@@ -4,18 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-    LAB 7: JavaScript Events
-    </header>
+    <h1>LAB 7: JavaScript Events</h1>
+<!--  mosue event (hovering and leaving the button should change a message) -->
+    <section>
+        <h2>Mouse Event</h2>
 
+            <button id="mouse-event">Mouse Event</button>
 
+    </section>
 
+<!--  keyboard event (display the latest key pressed) -->
+    <section>
+        <h2>Keyboard Event</h2>
+        <label for="keyEvent">Keyboard Event:</label>
+            <input type="text" id="keyboard-event">
+    </section>
 
+<!--  form events (display a message when the form is submitted without refreshing the page) -->
+    <section>
+        <h2>Form Events</h2>
+        <label for="fName">fName:</label>
+        <input type="text" id="fName">
+        <br>
+        <br>
+        <label for="mName">mName:</label>
+        <input type="text" id="mName">
+        <br>
+        <br>
+        <label for="lName">lName:</label>
+        <input type="text" id="lName">
+        <br>
+        <br>
+            <button id="form-event">Form Event</button>
 
+    </section>
 
-    
+<!--  focus events & blur events (update a message when the input gains or loses focus) -->
+    <section>
+        <h2>Focus and Blur</h2>
+        <label for="fNB">Focus and blur:</label>
+        <input type="text" id="fNB">
+
+    </section>
+
+<!--  event delegation (clicking any button inside the container displays its label or content) -->
+    <section>
+        <h2>Event Delegation</h2>
+
+            <button id="delegation">Delegation</button>
+
+    </section>
+
+    <footer>
+        &copy;2025 
+    </footer>
 </body>
 </html>

@@ -1,0 +1,48 @@
+body {
+    background-color: azure;
+    margin: 0;
+}
+h1 {
+    font-weight: bolder;
+    background-color: #333;
+    color: antiquewhite;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+section {
+    background-color: yellow;
+    text-align: center;
+    width: 25%;
+    justify-self: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+title {
+    text-decoration: underline;
+}
+
+label {
+    font-weight: bold;
+}
+
+button {
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+footer {
+    background-color: orange;
+    margin: 0%;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    text-align: center;
+}
